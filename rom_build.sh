@@ -228,13 +228,13 @@ process_kernel() {
 }
 
 # ==========================================
-# Phase 5: kernel branch lineage-23.2-ksun-new
+# Phase 5: kernel branch lineage-23.2-ksun
 # ==========================================
 
-print_step "Phase 5: switching kernel branch -> lineage-23.2-ksun-new"
+print_step "Phase 5: switching kernel branch -> lineage-23.2-ksun"
 
 cd kernel/lge/sdm845
-git checkout lineage-23.2-ksun-new
+git checkout lineage-23.2-ksun
 echo "Current kernel Git state:"
 git log -1 --oneline
 cd ../../..
