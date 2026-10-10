@@ -1,3 +1,20 @@
+20261010-12.12
+1. Integrated Dolby Atmos support
+2. Enable Direct Audio Passthrough Mode (DIRECT Output)
+   - When 3.5mm headphones are plugged in and the Hi-Fi Quad DAC is enabled, all music streams are routed directly to the dedicated DAC hardware via DIRECT mode.
+   - Recommended to use professional players with Hi-Res/Direct output support, such as Poweramp, UAPP, etc.
+   - **Note:** In DIRECT mode, Dolby Atmos will not take effect, and concurrent audio mixing across multiple media apps is unsupported (system notifications and phone calls are unaffected).
+3. Redesigned FM Radio UI
+4. Quad DAC panel enhancements and fixes
+   - Upgraded UI controls and layouts to Material Design 3 card style.
+   - Fixed an issue where switching Sound Presets had no effect.
+   - Fixed an issue where the L/R channel balance was reset to zero after pausing and resuming playback.
+   - Replaced channel balance buttons with vintage-style rotary knobs.
+   - Exposed all 8 hardware ROM digital filters supported by the ES9218P DAC (previously limited to 3 in stock and AOSP based ROMs), selectable directly from the list.
+   - Standardized digital filter names to official technical terminology: "Short", "Sharp", and "Slow" are now "Apodizing fast roll-off 2", "Linear phase fast roll-off", and "Linear phase slow roll-off", respectively.
+5. Updated KernelSU-Next to v3.4.0
+6. Fixed loudspeaker audio distortion and clipping at high volume levels
+
 20260924-12.12
 - Fix no audio from the earpiece during phone calls (judyln)
 - Fix FM radio not playing until the mute button is toggled (judyln)
