@@ -143,20 +143,7 @@ cd ../../..
 # Phase 2: build judyln on the prebuilt-audio branches
 # ==========================================
 
-print_step "Phase 2: switching judyln-common branches -> prebuilt-audio and building judyln"
-
-cd device/lge/judyln-common
-git checkout lineage-23.2-prebuilt-audio
-echo "Current device judyln-common Git state:"
-git log -1 --oneline
-cd ../../..
-
-cd vendor/lge/judyln-common
-git checkout lineage-23.0-prebuilt-audio
-echo "Current vendor judyln-common Git state:"
-git log -1 --oneline
-cd ../../..
-
+print_step "Phase 2: building judyln ROM (m bacon)"
 breakfast judyln
 m bacon -j8
 sync_update_json "judyln"
